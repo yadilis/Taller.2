@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Peces</title>
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            CROWNTAIL TOSCANO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="comida.html">Comida de peces</a>
+                        <a class="dropdown-item" href="plantas.html">Plantas acuáticas</a>
+                        <a class="dropdown-item" href="filtros.html">Filtros</a>
+                        <a class="dropdown-item" href="peces.html">Peces</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-primary position-relative" data-toggle="modal" data-target="#cartModal">
+                CARRITO
+                <i class="bi bi-cart3 ml-2"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartItemCount">0</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="cartItemsList" class="list-group">
+                
+                </ul>
+                <div class="cart-total mt-3">
+                    <h5 class="text-right">Total: <span id="cartTotal">0.00€</span></h5>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="processPurchase()">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container card-container mt-5">
+    <div class="row" id="productContainer">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy1.jpg" alt="Guppy grass">
+                <div class="card-body">
+                    <h5 class="card-title">Guppy grass</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Guppy grass', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy2.jpg" alt="Guppy Blue Moscow Machos">
+                <div class="card-body">
+                    <h5 class="card-title">Guppy Blue Moscow Machos</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Guppy Blue Moscow Machos', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy3.jpg" alt="Guppy amarillo">
+                <div class="card-body">
+                    <h5 class="card-title">Guppy amarillo</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Guppy amarillo', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy4.jpg" alt="Full red (Rojos)">
+                <div class="card-body">
+                    <h5 class="card-title">Full red (Rojos)</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Full red (Rojos)', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy5.png" alt="Moscow Green">
+                <div class="card-body">
+                    <h5 class="card-title">Moscow Green</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Moscow Green', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy6.jpg" alt="Moscow black">
+                <div class="card-body">
+                    <h5 class="card-title">Moscow black</h5>
+                    <p class="card-text">$5</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Moscow black', 5)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy7.jpg" alt="Grass Guppy">
+                <div class="card-body">
+                    <h5 class="card-title">Grass Guppy</h5>
+                    <p class="card-text">$6</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Grass Guppy', 6)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/guppy8.jpg" alt="Cola Mosaico">
+                <div class="card-body">
+                    <h5 class="card-title">Cola Mosaico</h5>
+                    <p class="card-text">$6</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Cola Mosaico', 6)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
