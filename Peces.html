@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/productos.css">
     <title>Peces</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
-    <header class="container-fluid d-flex justify-content-between align-items-center">
-        <a href="index.html" class="btn">INICIO</a>
-        <p>Variedades de Peces</p>
-    </header>
 
-    <div class="container">
+<body>
+    <div class="fixed-top">
+        <header class="container-fluid bg-primary d-flex align-items-center p-3">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 60px;">
+                <p class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</p>
+            </div>
+            <div class="ml-auto">
+                <a href="index.html" class="btn btn-primary btn-lg me-3">INICIO</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="container mt-5">
+        <form class="container mb-4" id="buscar-form">
+            <input class="form-control me-2" type="search" placeholder="Buscar pez..." aria-label="Search" id="buscar-input">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+
         <div class="contenedor-principal">
             <div class="contenedor-caja">
                 <div class="caja caja-1">
@@ -30,7 +45,7 @@
 
             <div class="contenedor-caja">
                 <div class="caja caja-2">
-                    <h2>Ramirezi</h2> 
+                    <h2>Ramirezi</h2>
                     <a href="peces2.html">
                         <img src="imagenes/ramirezi.jpg" alt="ramirezi">
                     </a>
@@ -46,7 +61,7 @@
                 <div class="caja caja-3">
                     <h2>Guppy</h2>
                     <a href="peces3.html">
-                        <img src="imagenes/gu.jpg" alt="guppy">  
+                        <img src="imagenes/gu.jpg" alt="guppy">
                     </a>
                     <p>
                         El pez Guppy, conocido científicamente como Poecilia reticulata, es una de las especies más populares en acuarios debido a su facilidad de reproducción y atractiva coloración.
@@ -67,57 +82,61 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="contenedor-caja">
-    <div class="caja caja-5">
-        <h2>Neón Tetra</h2>
-        <img src="imagenes/neon tetra.jpg" alt="tetra">
-        <p>
-            El Tetra Neon es un pequeño pez tropical conocido por su coloración vibrante y comportamiento pacífico. Es originario de las aguas dulces de Sudamérica, específicamente de la cuenca del río Amazonas.
-            <br>
-            Es apreciado por su cuerpo azul brillante a lo largo de la espalda, flancos plateados y una franja roja brillante que se extiende desde la cabeza hasta la aleta caudal.
-        </p>
-    </div>
-</div>
+                <div class="caja caja-5">
+                    <h2>Neón Tetra</h2>
+                    <img src="imagenes/neon tetra.jpg" alt="tetra">
+                    <p>
+                        El Tetra Neon es un pequeño pez tropical conocido por su coloración vibrante y comportamiento pacífico. Es originario de las aguas dulces de Sudamérica, específicamente de la cuenca del río Amazonas.
+                        <br>
+                        Es apreciado por su cuerpo azul brillante a lo largo de la espalda, flancos plateados y una franja roja brillante que se extiende desde la cabeza hasta la aleta caudal.
+                    </p>
+                </div>
+            </div>
 
-<div class="contenedor-caja">
-    <div class="caja caja-6">
-        <h2>Discus</h2>
-        <img src="imagenes/discus2.jpg" alt="discus">
-        <p>
-            El Discus es conocido por su belleza y colores vibrantes, siendo uno de los peces más apreciados en el mundo de la acuariofilia. Son nativos de las aguas cálidas y suaves de la cuenca del río Amazonas en América del Sur.
-            <br>
-            Los Discus tienen cuerpos redondos y aplanados lateralmente, con una variedad de patrones y colores que van desde el rojo, naranja, marrón, hasta el azul y verde.
-            <br>
-            Prefieren acuarios grandes con plantas y lugares para esconderse.
-        </p>
-    </div>
-</div>
+            <div class="contenedor-caja">
+                <div class="caja caja-6">
+                    <h2>Discus</h2>
+                    <img src="imagenes/discus2.jpg" alt="discus">
+                    <p>
+                        El Discus es conocido por su belleza y colores vibrantes, siendo uno de los peces más apreciados en el mundo de la acuariofilia. Son nativos de las aguas cálidas y suaves de la cuenca del río Amazonas en América del Sur.
+                        <br>
+                        Los Discus tienen cuerpos redondos y aplanados lateralmente, con una variedad de patrones y colores que van desde el rojo, naranja, marrón, hasta el azul y verde.
+                        <br>
+                        Prefieren acuarios grandes con plantas y lugares para esconderse.
+                    </p>
+                </div>
+            </div>
 
-<div class="contenedor-caja">
-    <div class="caja caja-7">
-        <h2>Corydora</h2>
-        <img src="imagenes/corydora.jpg" alt="corydora">
-        <p>
-            Los Corydoras son pequeños peces de fondo que pertenecen a la familia Callichthyidae. Son nativos de aguas dulces en América del Sur, donde se encuentran en ríos y arroyos con fondos de arena y grava.
-            <br>
-            Son conocidos por su comportamiento tranquilo y su capacidad para limpiar el sustrato del acuario. También son apreciados por sus patrones y colores variados.
-        </p>
-    </div>
-</div>
+            <div class="contenedor-caja">
+                <div class="caja caja-7">
+                    <h2>Corydora</h2>
+                    <img src="imagenes/corydora.jpg" alt="corydora">
+                    <p>
+                        Los Corydoras son pequeños peces de fondo que pertenecen a la familia Callichthyidae. Son nativos de aguas dulces en América del Sur, donde se encuentran en ríos y arroyos con fondos de arena y grava.
+                        <br>
+                        Son conocidos por su comportamiento tranquilo y su capacidad para limpiar el sustrato del acuario. También son apreciados por sus patrones y colores variados.
+                    </p>
+                </div>
+            </div>
 
-<div class="contenedor-caja">
-    <div class="caja caja-8">
-        <h2>Escalares</h2>
-        <img src="imagenes/escaleres.jpg" alt="escalares">
-        <p>
-            Los Escalares, también conocidos como Pterophyllum scalare, son peces de agua dulce nativos de las cuencas del río Amazonas y sus afluentes en América del Sur. Son apreciados en acuarios por su forma distintiva y su comportamiento tranquilo.
-            <br>
-            Estos peces tienen cuerpos altos y comprimidos lateralmente, con aletas largas y delicadas que les dan un aspecto elegante. Son gregarios y pueden convivir con una variedad de otras especies en un acuario comunitario bien establecido.
-        </p>
+            <div class="contenedor-caja">
+                <div class="caja caja-8">
+                    <h2>Escalares</h2>
+                    <img src="imagenes/escaleres.jpg" alt="escalares">
+                    <p>
+                        Los Escalares, también conocidos como Pterophyllum scalare, son peces de agua dulce nativos de las cuencas del río Amazonas y sus afluentes en América del Sur. Son apreciados en acuarios por su forma distintiva y su comportamiento tranquilo.
+                        <br>
+                        Estos peces tienen cuerpos altos y comprimidos lateralmente, con aletas largas y delicadas que les dan un aspecto elegante. Son gregarios y pueden convivir con una variedad de otras especies en un acuario comunitario bien establecido.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="JS/buscar.js"></script>
 </body>
+
 </html>

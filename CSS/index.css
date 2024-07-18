@@ -33,6 +33,12 @@ body, html {
     height: 600px;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 40px 10px; 
+    }
+}
 
 .hero .overlay {
     position: absolute;
@@ -124,60 +130,85 @@ body, html {
 }
 
 
-/*Contactos*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/*CONTACTANOS*/
 
 .footer {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 30px 0;
+    background-color: #20b7ee; 
+    color: white; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%; 
 }
 
 .footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+
 }
 
 .footer p {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+    font-size: 2em;
+    color: #fdfafa;
 }
 
 .footer .icon-link {
-    color: #007bff;
-    font-size: 1.5rem;
+    color: #151515; 
     margin-right: 15px;
     transition: color 0.3s;
+    font-size: 3rem;
 }
 
 .footer .icon-link:hover {
-    color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .footer .text-md-start {
-        text-align: center !important;
-    }
-
-    .footer .text-md-end {
-        text-align: center !important;
-        margin-top: 20px;
-    }
+    color: #351ee7; 
 }
 
 .footer .container {
-    width: 100%; 
-    max-width: 100%; 
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.footer .contact-info {
+    text-align: left;
+}
 
+.footer .social-links {
+    text-align: right;
+}
+
+.footer .icon-link {
+    text-decoration: none;
+    display: inline-block;
+    color: #f4f3f2;
+}
+
+/* Contenedor */
+.wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .social-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer .contact-info {
+        margin-bottom: 20px;
+    }
+}
 
 
 
@@ -203,3 +234,29 @@ body {
     font-size: 14px; 
     color: #333; 
 }
+
+
+@media (max-width: 992px) {
+    .feature {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+
+    .video-column {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 calc(100% - 20px); 
+        max-width: calc(100% - 20px);
+    }
+
+    .video-column {
+        flex: 1 1 calc(100% - 20px); 
+        max-width: calc(100% - 20px);
+    }
+}
+

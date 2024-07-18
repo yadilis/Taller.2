@@ -31,6 +31,14 @@ body, html {
     padding: 60px 20px;
     text-align: center;
     height: 900px;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 40px 10px; 
+    }
 }
 
 
@@ -64,33 +72,37 @@ body, html {
     color: #ffffff;
     font-family: 'Arial', sans-serif; 
 }
+
+/*formulario*/
 .container {
     display: flex;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    gap: 20px;
 }
+
 .formulario {
-    flex: 3;
+    flex: 1;
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .formulario h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
+
 .form-group input,
 .form-group textarea {
     width: calc(100% - 20px);
@@ -99,12 +111,15 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .form-group textarea {
     height: 100px;
 }
+
 .form-group.full-width {
     width: 100%;
 }
+
 .btn-enviar {
     background-color: #4CAF50;
     color: white;
@@ -118,22 +133,29 @@ body, html {
     cursor: pointer;
     border-radius: 4px;
 }
+
 .mapa {
-    flex: 3;
-    padding: 40px;
+    flex: 1;
+    padding: 20px;
     background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .mapa h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
+
 .contact-info {
     margin-top: 20px;
 }
+
 .contact-info p {
     margin-bottom: 10px;
 }
+
 iframe {
     width: 100%;
     height: 300px;
