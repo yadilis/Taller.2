@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Peces, Plantas y Comida</title>
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="fixed-top">
+        <header class="container-fluid bg-primary d-flex align-items-center p-3">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 60px;">
+                <p class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</p>
+            </div>
+            <div class="ml-auto">
+                <a href="index.html" class="btn btn-primary btn-lg me-3">Inicio</a>
+            </div>
+        </header>
+    </div>
+
+    <main class="container-fluid mt-5">
+        <header id="inicio" class="container-fluid bg-primary d-flex align-items-center justify-content-center p-2 mb-4">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 50px;">
+                <h1 class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</h1>
+            </div>
+        </header>
+
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/tetra-color.jpg" class="card-img-top" alt="Escamas" onclick="agregarProducto('1', 'Escamas', 15.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Escamas</h5>
+                        <p class="card-text">$15.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida1.jpg" class="card-img-top" alt="Gránulos" onclick="agregarProducto('2', 'Gránulos', 12.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Gránulos</h5>
+                        <p class="card-text">$12.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida2.jpg" class="card-img-top" alt="Pellets" onclick="agregarProducto('3', 'Pellets', 18.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Pellets</h5>
+                        <p class="card-text">$18.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida3.jpg" class="card-img-top" alt="Tabletas" onclick="agregarProducto('4', 'Tabletas', 20.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Tabletas</h5>
+                        <p class="card-text">$20.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida4.jpg" class="card-img-top" alt="Liofilizados" onclick="agregarProducto('5', 'Liofilizados', 22.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Liofilizados</h5>
+                        <p class="card-text">$22.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida5.jpg" class="card-img-top" alt="Congelados" onclick="agregarProducto('6', 'Congelados', 25.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Congelados</h5>
+                        <p class="card-text">$25.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/comida6.jpg" class="card-img-top" alt="Vivos" onclick="agregarProducto('7', 'Vivos', 30.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivos</h5>
+                        <p class="card-text">$30.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="table-container">
+            <table class="table table-bordered table-striped" id="tabla">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>TOTAL</th>
+                        <th></th>
+                        <th></th>
+                        <td id="total">0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <script src="JS/productos.js"></script>
+</body>
+
+</html>

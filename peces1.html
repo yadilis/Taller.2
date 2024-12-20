@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Peces</title>
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <div class="fixed-top">
+        <header class="container-fluid bg-primary d-flex align-items-center p-3">
+           <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 60px;">
+                <p class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</p>
+            </div>
+            <div class="ml-auto">
+                <a href="i" class="btn btn-primary btn-lg me-3">Inicio</a>
+                <a href="#" class="btn btn-primary btn-lg position-relative" data-toggle="modal" data-target="#cartModal">
+                    CARRITO
+                    <i class="bi bi-cart3 ml-2"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartItemCount">0</span>
+                </a>
+            </div>
+        </header>
+    </div>
+
+
+    <main class="container mt-5">
+        <header id="inicio" class="container-fluid bg-primary d-flex align-items-center justify-content-center p-2 mb-4">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 50px;">
+                <h1 class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</h1>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="imagenes/betta1.webp" class="card-img-top" alt="Pez Betta Crowntail Azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Pez Betta Crowntail Azul</h5>
+                        <p class="card-text">$21.99</p>
+                        <button class="btn btn-primary btn-sm addToCartBtn" onclick="addToCart('Pez Betta Crowntail Azul', 21.99)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="imagenes/betta2.webp" class="card-img-top" alt="Pez Betta Crowntail Rojo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pez Betta Crowntail Rojo</h5>
+                        <p class="card-text">$21.99</p>
+                        <button class="btn btn-primary btn-sm addToCartBtn" onclick="addToCart('Pez Betta Crowntail Rojo', 21.99)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="imagenes/betta3.webp" class="card-img-top" alt="Pez Betta Splendens Azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Pez Betta Splendens Azul</h5>
+                        <p class="card-text">$21.99</p>
+                        <button class="btn btn-primary btn-sm addToCartBtn" onclick="addToCart('Pez Betta Splendens Azul', 21.99)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="imagenes/betta4.webp" class="card-img-top" alt="Pez Betta Splendens Rojo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pez Betta Splendens Rojo</h5>
+                        <p class="card-text">$21.99</p>
+                        <button class="btn btn-primary btn-sm addToCartBtn" onclick="addToCart('Pez Betta Splendens Rojo', 21.99)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

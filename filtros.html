@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Peces, Plantas y Equipos</title>
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-primary d-flex align-items-center p-3">
+        <div class="d-flex align-items-center">
+            <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 60px;">
+            <p class="text-white mb-0 fs-5">CROWNTAIL TOSCANO</p>
+        </div>
+        <div class="ml-auto">
+    
+            <a href="index.html" class="btn btn-primary btn-lg me-3">Inicio</a>
+        </div>
+    </header>
+    <div class="container mt-4" id="resultados-busqueda">
+
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/Filtro4.jpg" class="card-img-top" alt="Filtro de Cascada" onclick="agregarProducto('filtro1', 'Filtro de Cascada', 25.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro de Cascada</h5>
+                        <p class="card-text">$25.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro10.jpg" class="card-img-top" alt="Filtro Interno" onclick="agregarProducto('filtro2', 'Filtro Interno', 22.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro Interno</h5>
+                        <p class="card-text">$22.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro5.webp" class="card-img-top" alt="Filtro Externo" onclick="agregarProducto('filtro3', 'Filtro Externo', 28.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro Externo</h5>
+                        <p class="card-text">$28.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro6.jpg" class="card-img-top" alt="Filtro de Mochila" onclick="agregarProducto('filtro4', 'Filtro de Mochila', 26.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro de Mochila</h5>
+                        <p class="card-text">$26.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro7.jpg" class="card-img-top" alt="Filtro de Esponja" onclick="agregarProducto('filtro5', 'Filtro de Esponja', 18.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro de Esponja</h5>
+                        <p class="card-text">$18.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro8.jpeg" class="card-img-top" alt="Filtro Biológico" onclick="agregarProducto('filtro6', 'Filtro Biológico', 24.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro Biológico</h5>
+                        <p class="card-text">$24.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="imagenes/filtro9.jpg" class="card-img-top" alt="Filtro UV (Ultravioleta)" onclick="agregarProducto('filtro7', 'Filtro UV (Ultravioleta)', 30.99)">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtro UV (Ultravioleta)</h5>
+                        <p class="card-text">$30.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="table-container">
+            <table class="table table-bordered table-striped" id="tabla">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>TOTAL</th>
+                        <th></th>
+                        <th></th>
+                        <td id="total">0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</div>
+    
+<script src="JS/productos.js"></script>
+<script src="JS/buscar.js"></script>
+</body>
+
+</html>

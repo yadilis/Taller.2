@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Peces</title>
+    <link rel="stylesheet" href="CSS/productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            CROWNTAIL TOSCANO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="comida.html">Comida de peces</a>
+                        <a class="dropdown-item" href="plantas.html">Plantas acuáticas</a>
+                        <a class="dropdown-item" href="filtros.html">Filtros</a>
+                        <a class="dropdown-item" href="peces.html">Peces</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-primary position-relative" data-toggle="modal" data-target="#cartModal">
+                CARRITO
+                <i class="bi bi-cart3 ml-2"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartItemCount">0</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="cartItemsList" class="list-group">
+                
+                </ul>
+                <div class="cart-total mt-3">
+                    <h5 class="text-right">Total: <span id="cartTotal">0.00€</span></h5>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="processPurchase()">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container card-container mt-5">
+    <div class="row" id="productContainer">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus3.jpg" alt="Disco Turquesa Azul">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DE ACUARIO</h6>
+                    <h5 class="card-title">Disco Turquesa Azul</h5>
+                    <p class="card-text">$100</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Disco Turquesa Azul', 100)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus4.jpg" alt="Disco Turquesa Rojo">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Disco Turquesa Rojo</h5>
+                    <p class="card-text">$100</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Disco Turquesa Rojo', 100)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus5.jpg" alt="Pigeon Blood Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Pigeon Blood Discus</h5>
+                    <p class="card-text">$100</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Pigeon Blood Discus', 119.99)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus6.jpg" alt="Blue Diamond Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Blue Diamond Discus</h5>
+                    <p class="card-text">$100</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Blue Diamond Discus', 100)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus7.jpg" alt="Leopard Skin Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Leopard Skin Discus</h5>
+                    <p class="card-text">$100</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Leopard Skin Discus', 100)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus8.jpg" alt="Snow White Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Snow White Discus</h5>
+                    <p class="card-text">$60</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Snow White Discus', 60)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus9.jpg" alt="Golden Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">Golden Discus</h5>
+                    <p class="card-text">$80</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('Golden Discus', 80)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="imagenes/discus10.jpg" alt="San Merah Discus">
+                <div class="card-body">
+                    <span class="badge badge-custom">Envío GRATIS</span>
+                    <h6 class="card-subtitle mb-2 text-muted">PECES DISCO</h6>
+                    <h5 class="card-title">San Merah Discus</h5>
+                    <p class="card-text">$80</p>
+                    <button class="btn btn-primary addToCartBtn" onclick="addToCart('San Merah Discus', 80)">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

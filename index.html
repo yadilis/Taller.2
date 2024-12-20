@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="fixed-top">
+        <header class="container-fluid bg-primary d-flex align-items-center justify-content-between p-3">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/logotipo.png" alt="Logo" class="img-fluid me-3" style="max-height: 60px;">
+                <p class="text-center mb-1 fs-20">CROWNTAIL TOSCANO</p>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="comida.html">Comida de peces</a></li>
+                                <li><a class="dropdown-item" href="plantas.html">Plantas acuáticas</a></li>
+                                <li><a class="dropdown-item" href="filtros.html">Filtros</a></li>
+                                <li><a class="dropdown-item" href="Peces.html">Peces</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-4" id="resultados-busqueda"></div>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>BIENVENIDO AL MUNDO 
+                        <br>
+                        DE CROWNTAIL 
+                    </h5>
+                </div>
+                <img src="imagenes/Acuario.jpg" class="d-block w-100 carousel-img" alt="acuario">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <img src="imagenes/1.jpg" class="d-block w-100 carousel-img" alt="acuario1">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <img src="imagenes/Acuario.jpg" class="d-block w-100 carousel-img" alt="acuario">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <hr>
+    <div class="video-grid">
+        <div class="video-column">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/1Q5i2kN1lcM?autoplay=1&mute=1" title="Peces de Colores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="video-username">CROWNTAIL TOSCANO</p>
+        </div>
+        <div class="video-column">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/t6D3i8N0Uu8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="video-username">CROWNTAIL TOSCANO</p>
+        </div>
+        <div class="video-column">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/HHi8qOtHnhE?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="video-username">CROWNTAIL TOSCANO</p>
+        </div>
+        <div class="video-column">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uyYPBnxrY38?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="video-username">CROWNTAIL TOSCANO</p>
+        </div>
+    <section class="features">
+        <h2>En Todo Sobre Acuarios...</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/aficion-1.png" alt="Icono Aficionados">
+                </div>
+                <div class="feature-text">
+                    <h3>Somos aficionados</h3>
+                    <p>No nos dejaban tener un perro, un gato, un pájaro, y lo peor que pudieron hacer cuando éramos pequeños fue comprarnos un acuario. Uno llevo a otro, y a otro, y a otro... ¿te pasó lo mismo?</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/pasion1.png" alt="Icono Apasionados">
+                </div>
+                <div class="feature-text">
+                    <h3>Somos apasionados</h3>
+                    <p>Nos encanta la acuariofilia y todo lo que conlleva. Por ello lanzamos este proyecto para todo aquel que quiera iniciarse o avanzar en el mantenimiento de acuarios de agua dulce.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/ayudar1.png" alt="Icono Ayuda">
+                </div>
+                <div class="feature-text">
+                    <h3>Queremos ayudarte</h3>
+                    <p>Nos iniciamos con los acuarios en la era analógica cuando no había internet para ampliar y compartir conocimientos.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/difusion1.png" alt="Icono Difundir">
+                </div>
+                <div class="feature-text">
+                    <h3>Queremos difundir</h3>
+                    <p>Todo Sobre Acuarios nace de la necesidad de documentar información de valor y difundir la acuariofilia en el sector de las mascotas.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/compromiso-1.png" alt="Icono Compromiso">
+                </div>
+                <div class="feature-text">
+                    <h3>Estamos comprometidos</h3>
+                    <p>La acuariofilia es compromiso y responsabilidad con el medioambiente y esperamos poder transmitirte los verdaderos valores de la afición.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="imagenes/evolucion-1.png" alt="Icono Evolución">
+                </div>
+                <div class="feature-text">
+                    <h3>Estamos en evolución</h3>
+                    <p>Somos inquietos por naturaleza y no podemos parar ni un solo segundo. Nuestros propios acuarios nos ayudan a aprender continuamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <br><br>
+            <h1>Conoce nuestras mejores fichas NO técnicas</h1>
+            <br><br>
+            <p>Nos encanta compartir todo nuestro conocimiento sobre las especies que mantenemos. Tenemos mucha experiencia con distintos peces y queremos compartir de la manera más dinámica posible todo nuestro conocimiento.</p>
+            <br>
+            <p>Es por ello que tratamos de evitar los tecnicismos. Estamos en confianza y queremos que aprendas de la forma más clara y rápida posible, cómo dar lo mejor a tus mascotas.</p>
+        </div>
+    </div>
+    </div>
+<script src="JS/formulario.js"></script>
+<script src="JS/buscar.js"></script>
+</body>
+</html>
