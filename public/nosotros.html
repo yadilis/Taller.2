@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="CSS/nosotros.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero position-relative">
+        <img src="https://us.123rf.com/450wm/dwiyulianto/dwiyulianto2006/dwiyulianto200600399/150006929-pez-luchador-siam%C3%A9s-pez-betta-sobre-fondo-negro.jpg?ver=6" alt="" class="w-100" style="height: 400px; object-fit: cover;">
+        <div class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center" style="background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0;">
+            <h1 class="display-4 font-weight-bold">¿Quiénes somos?</h1>
+            <p class="lead mt-3 px-3">
+                En CROWNTAIL, nos apasiona el mundo de los acuarios. Desde nuestros inicios, nos hemos dedicado a ofrecer
+                productos de calidad, asesoramiento experto y un servicio personalizado. Ya seas un principiante o un
+                experto, estamos aquí para ayudarte.
+            </p>
+        </div>
+    </div>
+    <hr class="my-5">
+
+    <!-- Contact Form Section -->
+    <section class="my-5">
+        <h2 class="text-center mb-4 font-weight-bold">Contáctanos</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 shadow-lg p-4 rounded bg-light position-relative">
+                    <div class="ribbon bg-primary text-white position-absolute px-3 py-1" style="top: -10px; left: -10px; font-size: 14px;">¡Escríbenos ahora!</div>
+                    <form action="/submit" method="POST">
+                        <div class="form-group">
+                            <label for="nombre" class="font-weight-bold">Nombre</label>
+                            <input type="text" class="form-control border-primary" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="font-weight-bold">Correo Electrónico</label>
+                            <input type="email" class="form-control border-primary" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion" class="font-weight-bold">Dirección</label>
+                            <textarea class="form-control border-primary" id="direccion" name="direccion" rows="3" placeholder="Tu dirección" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono" class="font-weight-bold">Teléfono</label>
+                            <input type="text" class="form-control border-primary" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block rounded-pill shadow">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="mt-5">
+        <h2 class="text-center mb-4 font-weight-bold">Nuestra Ubicación</h2>
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9 mb-4 shadow">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63836.10613588768!2d-78.57038191717452!3d-0.3186089176304845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x91d5a25b075778bb%3A0xa487bbdf540de5e0!2sLa%20Cocha%2C%20Quito!3m2!1d-0.318609!2d-78.52918199999999!4m0!5e0!3m2!1ses!2sec!4v1720038541483!5m2!1ses!2sec" 
+                        class="embed-responsive-item" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="text-center bg-light p-4 rounded shadow">
+                <p><strong>Email:</strong> angeltoscano1984@gmail.com</p>
+                <p><strong>Teléfono:</strong> 0983134078</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/formulario.js"></script>
+</body>
+</html>
